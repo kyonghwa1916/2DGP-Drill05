@@ -4,6 +4,7 @@ open_canvas()
 
 backgound = load_image('TUK_GROUND.png')
 character = load_image('animation_sheet.png')
+character_stay = load_image('character.png')
 running = True
 frame = 0
 dirx = 0
