@@ -47,7 +47,10 @@ while running:
         y += diry * 5
     clear_canvas()
     backgound.draw(400, 300)
-    character.clip_draw(frame * 100, 100, 100, 100, x, y)
+    if dirx == 0 and diry == 0:
+        character_stay.draw(x, y)
+    else:
+        character.clip_draw(frame * 100, 100, 100, 100, x, y)
     update_canvas()
     handle_event()
     frame = (frame + 1) % 8
