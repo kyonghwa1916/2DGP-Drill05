@@ -40,12 +40,10 @@ def handle_event():
 
 
 while running:
-    x += dirx * 5
-    y += diry * 5
-    if x < 30 or x > 770:
-        dirx = 0
-    if y < 30 or y > 570:
-        diry = 0
+    if x > 30 and x < 770:
+        x += dirx * 5
+    if y > 30 and y < 570:
+        y += diry * 5
     clear_canvas()
     backgound.draw(400, 300)
     character.clip_draw(frame * 100, 100, 100, 100, x, y)
