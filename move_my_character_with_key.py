@@ -8,6 +8,8 @@ running = True
 frame = 0
 dirx = 0
 diry = 0
+x = 400
+y = 300
 
 def handle_event():
     global running, dirx, diry
